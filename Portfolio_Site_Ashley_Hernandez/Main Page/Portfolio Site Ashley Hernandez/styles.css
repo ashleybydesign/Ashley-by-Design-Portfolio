@@ -106,14 +106,73 @@ footer a {
     color: white;
     margin: 0 10px;
 }
-.button {
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
+.project-section {
+    text-align: center;
+    margin-top: 40px;
 }
-.button:hover {
-    background-color: #555;
+
+.project-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-section .project {
+    display: inline-block;
+    margin: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-section .project:hover {
+    transform: scale(1.1);
+}
+
+/* CSS for the SVG animation */
+.animated-svg {
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+    transition: transform 0.3s ease-in-out;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    .animated-svg:hover {
+transform: scale(1.2); 
+}
+}
+@media screen and (min-width: 768px) {
+    
+    header {
+        text-align: center;
+    }
+
+    header img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .project-section .project {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Large Screen Sizes */
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img {
+        margin-right: 20px;
+    }
+
+    .project-section .project {
+        width: 40%;
+    }
 }
