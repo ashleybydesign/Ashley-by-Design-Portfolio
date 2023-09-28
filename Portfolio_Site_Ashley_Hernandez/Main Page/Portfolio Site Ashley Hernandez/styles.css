@@ -34,3 +34,7 @@ a:hover {
 .button:hover {
     background-color: var(--secondary-color);
 }
+img {
+    width: 100%;
+    height: auto;
+}
