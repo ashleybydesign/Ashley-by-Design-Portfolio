@@ -125,8 +125,6 @@ footer a {
 .project-section .project:hover {
     transform: scale(1.1);
 }
-
-/* CSS for the SVG animation */
 .animated-svg {
     width: 100px;
     height: 100px;
