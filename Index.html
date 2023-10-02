@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ashley Hernandez">
@@ -11,14 +12,15 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="Images/Logo/ABD_Logo.svg" alt="logo" style="width:250px;height:250px;">
-            <br>
-            <a href="#">Ashley Hernandez</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-            <a href="#">Work</a>
-         
+        <div class="container">
+            <div class="navtoggle" id="myNavToggle">
+                <img class="logo" src="Images/Logo/ABD_Logo.svg" alt="logo">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+                <a href="#">Ashley Hernandez</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a href="#">Work</a>
+            </div>
         </div>
     </header>
     <div>
@@ -68,6 +70,13 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function menuToggle(){
+            var mainMenu = document.getElementById("myNavToggle");
+            mainMenu.classList.toggle("open");
+        }
+    </script>
 </body>
 </html>

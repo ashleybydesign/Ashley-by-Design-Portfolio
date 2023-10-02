@@ -2,6 +2,7 @@
     --primary-color: #3498db;
     --secondary-color: #e74c3c;
 }
+
 body {
     font-size: 16px;
     font-weight: 400;
@@ -13,6 +14,7 @@ h2 {
     font-size: 24px;
     font-weight: 600;
 }
+
 a {
     color: var(--primary-color);
     text-decoration: none;
@@ -21,6 +23,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -35,56 +38,70 @@ a:hover {
 .button:hover {
     background-color: var(--secondary-color);
 }
+
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between; /* Updated alignment for logo and menu icon */
+    align-items: center;
 }
+
 header a {
     text-decoration: none;
     color: white;
-    margin: 0 15px;
     font-weight: bold;
+    margin: 0 15px;
 }
+
 main {
     padding: 20px;
     background-color: #fff;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 main h4 {
     font-size: 18px;
     line-height: 1.5;
 }
+
 main h2 {
     font-size: 24px;
     margin-top: 20px;
 }
+
 main img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin-top: 10px;
 }
+
 main h3 {
     font-size: 20px;
     margin-top: 20px;
 }
+
 main p {
     font-size: 16px;
     line-height: 1.5;
     margin-top: 10px;
 }
+
 main a {
     text-decoration: none;
     background-color: #333;
@@ -95,17 +112,20 @@ main a {
     display: inline-block;
     margin-top: 10px;
 }
+
 footer {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
+
 footer a {
     text-decoration: none;
     color: white;
     margin: 0 10px;
 }
+
 .project-section {
     text-align: center;
     margin-top: 40px;
@@ -116,7 +136,6 @@ footer a {
     margin-bottom: 20px;
 }
 
-
 .project-section .project {
     display: inline-block;
     margin: 0 20px;
@@ -126,12 +145,14 @@ footer a {
 .project-section .project:hover {
     transform: scale(1.1);
 }
+
 .animated-svg {
     width: 100px;
     height: 100px;
     animation: rotate 2s linear infinite;
     transition: transform 0.3s ease-in-out;
 }
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -139,18 +160,13 @@ footer a {
     100% {
         transform: rotate(360deg);
     }
-    .animated-svg:hover {
-transform: scale(1.2); 
 }
-}
-@media screen and (min-width: 768px) {
-    
-    header {
-        text-align: center;
-    }
 
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    /* Tablet and Larger Screen Sizes */
     header img {
-        margin: 0 auto;
+        margin: 0 auto; /* Centering the logo */
         display: block;
     }
 
@@ -162,7 +178,6 @@ transform: scale(1.2);
 @media screen and (min-width: 1024px) {
     /* Large Screen Sizes */
     header {
-        display: flex;
         justify-content: center;
         align-items: center;
     }
