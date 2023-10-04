@@ -1,13 +1,29 @@
+/* Colors used */
 :root {
     --primary-color: #3498db;
     --secondary-color: #e74c3c;
+    --brand-background: #fdf7ed;
+    --brand-text: #143a52;
 }
 
-body {
+/* Global Styles */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    background-color: #f2f2f2;
+}
+
+body {
+    background-color: var(--brand-background);
+    font-family: 'Poppins', sans-serif;
+    color: var(--brand-text);
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
 }
 
 h2 {
@@ -24,6 +40,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Buttons */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -39,24 +56,27 @@ a:hover {
     background-color: var(--secondary-color);
 }
 
+/* Images */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Reset some default styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
     display: flex;
-    justify-content: space-between; /* Updated alignment for logo and menu icon */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -67,6 +87,7 @@ header a {
     margin: 0 15px;
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
     background-color: #fff;
@@ -74,45 +95,30 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main h4 {
-    font-size: 18px;
-    line-height: 1.5;
+main h1 {
+    font-size: 2.75em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-main h2 {
-    font-size: 24px;
-    margin-top: 20px;
+/* Project Section Styles */
+.project {
+    text-align: center;
+    margin-top: 40px;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
+.project h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project picture {
     display: block;
-    margin-top: 10px;
+    margin: 0 auto;
 }
 
-main h3 {
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-main p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 10px;
-}
-
-main a {
-    text-decoration: none;
-    background-color: #333;
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
@@ -124,69 +130,4 @@ footer a {
     text-decoration: none;
     color: white;
     margin: 0 10px;
-}
-
-.project-section {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.project-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.project-section .project {
-    display: inline-block;
-    margin: 0 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-section .project:hover {
-    transform: scale(1.1);
-}
-
-.animated-svg {
-    width: 100px;
-    height: 100px;
-    animation: rotate 2s linear infinite;
-    transition: transform 0.3s ease-in-out;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* Media Queries */
-@media screen and (min-width: 768px) {
-    /* Tablet and Larger Screen Sizes */
-    header img {
-        margin: 0 auto; /* Centering the logo */
-        display: block;
-    }
-
-    .project-section .project {
-        margin: 0 30px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    /* Large Screen Sizes */
-    header {
-        justify-content: center;
-        align-items: center;
-    }
-
-    header img {
-        margin-right: 20px;
-    }
-
-    .project-section .project {
-        width: 40%;
-    }
 }

@@ -1,82 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ashley Hernandez">
-    <meta name="description" content="Ashley Hernandez UX/UI designer">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="author" content="Ashley">
+    <meta name="description" content="Ashley's Portfolio: A showcase of my projects and skills.">
+    <link rel="stylesheet" href="styles.css">
     <title>Ashley: By Design</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavToggle">
-                <img class="logo" src="Images/Logo/ABD_Logo.svg" alt="logo">
-                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-                <a href="#">Ashley Hernandez</a>
-                <a href="#">Contact</a>
-                <a href="#">About</a>
-                <a href="#">Work</a>
-            </div>
-        </div>
+        <img src="logo.png" alt="Your Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div>
-        <h4>I am a passionate and multifaceted entrepreneur with a diverse background that fuels my creativity. Drawing inspiration from my love for travel, art, business, and technology, I bring a unique perspective to my work and designs. <br> With a foundation in UX/UI design, graphic design, coding and photography, I craft intuitive and visually captivating projects while leveraging my experience in marketing and social media management to drive impactful results. My portfolio reflects a seamless blend of aesthetics, functionality and diversity that are influenced by my personal interests and professional expertise.</h4>
-    </div>
     <main>
-
-        <div class="project-section">
-            <h2>Recent Projects</h2>
-            <div class="project">
-                <img src="images/Projects/project 1 logo.png" alt="Project 1" style="width:550px;height:420px;">
-                <h3>Travel Genie</h3>
-                <p>The creation of the Travel Genie platform involved a comprehensive and user-centric approach to address the challenges faced by modern travelers.</p>
-                <a href="#">Read More</a>
-            </div>
-            <br>
-            <br>
-            <div class="project">
-                <img src="images/Projects/project 2 logo.PNG" alt="Project 2" style="width:550px;height:420px">
-                <h3>CR8</h3>
-                <p>CR8 is an AI generative app with a cutting-edge iOS and Android application that leverages the power of AI technology.</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-        <br>
+        <h1>My Portfolio</h1>
+        <section class="project">
+            <h2>Project 1</h2>
+            <picture>
+                <img src="Images/Projects/project 1 logo.png" alt="Project 1">
+            </picture>
+            <h2>Project 2</h2>
+            <picture>
+                <img src="Images/Projects/project 2 logo.PNG" alt="Project 1">
+            </picture>
+        </section>
     </main>
-    <footer>
-        <div>
-            <h2>Get in Touch</h2>
+    <footer id="contact">
+        <div> 
+            <h1>
+                Get In Touch
+            </h1>
+            <a href="#top">Back to top</a>
             <p>
-                Call: <a href="tel:7192293230">(719) 229-3230</a>,
-            </p>
-            <p> 
-                Email me here:  <a href="mailto:ash.mariehe@gmail.com">Email Me</a>
+                Let's build something together: email me at ash.mariehe@gmail.com, or call: <a
+                    href="tel:#">(719) 229-3230</a>
             </p>
             <div>
-                <a href="Linkedin" target="_blank">
-                    <img src="images/Social Media/linkedin-logo-linkedin-icon-transparent-free-png.webp" style="width:32px;height:32px;">
-                </a>
-                <a href="Behance" target="_blank">
-                    <img src="images/Social Media/Instagram_logo_2016.svg.webp" style="width:24px;height:24px;">
-                </a>
-                <a href="Github" target="_blank">
-                    <img src="images/Social Media/tiktok logo.png" style="width:64px;height:32px;">
-                </a>
-                <a href="#" class="button">Read More</a>
+                <a href="mailto:ash.mariehe@gmail.com">Email me</a>
             </div>
-        </div>
+        </div> 
     </footer>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script>
-        function menuToggle(){
-            var mainMenu = document.getElementById("myNavToggle");
-            mainMenu.classList.toggle("open");
-        }
-    </script>
+    <footer>
+     <a href="#" target="_blank"><img src="Images/Social Media/INSTAGRAM.png" alt="instagram"></a></li>
+           <a href="#" target="_blank"><img src="Images/Social Media/tiktok-logo.jpg" alt="Tik tok"></a></li>
+            <a href="#" target="_blank"><img src="Images/Social Media/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn"></a></li>
+    </footer>
 </body>
 </html>
