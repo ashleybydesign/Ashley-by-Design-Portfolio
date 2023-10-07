@@ -1,85 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ashley">
-    <meta name="description" content="Ashley's Portfolio: A showcase of my projects and skills.">
-    <link rel="stylesheet" href="styles.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Ashley: By Design</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ashley" />
+  <meta
+    name="description"
+    content="Ashley's Portfolio: A showcase of my projects and skills."
+  />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Ashley: By Design</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-            <img class="logo" src="logo.png">|
-          
-            <div class="mobile-menu">
-                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                    <i class="fas fa-bars"></i>
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+      <img class="logo" src="logo.png" alt=""/>
+      <div class="mobile-menu">
+        <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+          <i class="fas fa-bars"></i>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>My Portfolio</h1>
+    <section class="project container">
+      <h2>Travel Genie</h2>
+      <div class="row">
+        <div class="project-image col-lg-6">
+          <img src="Images/Projects/project-1-logo.png" alt="Project 1" />
         </div>
-    </header>
-    
-<main>
-    <h1> My Portfolio</h1>
-    <section class = "project container">
-        <h2>Travel Genie</h2>
-        <div class = "row">
-            <div class = "project-image col-lg-6">
-            <img src = "Images/Projects/project 1 logo.png" alt = "Project 1">
+        <div class="description col-lg-6">
+          <p>
+            Travel Genie is an all-inclusive recommendation-based travel
+            website and app where travelers will be able to get all the
+            necessary information and solutions for their travel needs.
+          </p>
+          <a href="travel.html">
+            <div class="button-container">
+              <button class="button">Learn More</button>
             </div>
-            <div class ="description col-lg-6">
-                <p>Travel Genie is an all-inclusive recommendation based travel website and app where travelers will be able to get all the necessary information and solutions for their travel needs. </p>
-                <a href="travel.html">
-                <button class="button"> Learn More</button>
-                </a>
-            </div>
+          </a>
         </div>
+      </div>
     </section>
     <section class="project-1 container">
-        <h2>CR8</h2>
-        <div class="row">
-            <div class="project-image col-lg-6">
-                <img src="Images/Projects/project 2 logo.PNG" alt = "project 2">
-            </div>
-            <div class = "description col-lg-6">
-                <p>CR8 is an AI generative app with cutting-edge iOS and Android application that leverages the power of AI technology and revolutionizes the process of image generation and modification. CR8 empowers its users to unleash their creativity and transform their projects with just a few words.</p>
-                <button class="button"> Learn More</button>
-            </div>
+      <h2>CR8</h2>
+      <div class="row">
+        <div class="project-image col-lg-6">
+          <img src="Images/Projects/project-2-logo.PNG" alt="project 2" />
         </div>
+        <div class="description col-lg-6">
+          <p>
+            CR8 is an AI generative app with a cutting-edge iOS and Android
+            application that leverages the power of AI technology and
+            revolutionizes the process of image generation and modification.
+            CR8 empowers its users to unleash their creativity and transform
+            their projects with just a few words.
+          </p>
+          <button class="button">Learn More</button>
+        </div>
+      </div>
     </section>
-</main>
-    <footer id="contact">
-        <div> 
-            <h1>
-                Get In Touch
-            </h1>
-            <a href="#top">Back to top</a>
-            <p>
-                Let's build something together: email me at <a href="mailto:ash.mariehe@gmail.com">ash.mariehe@gmail.com</a>, or call: <a href="tel:#">(719) 229-3230</a>
-            </p>
-        </div> 
-    </footer>
-    <footer>
-        <a href="#" target="_blank"><img src="Images/Social Media/INSTAGRAM.png" alt="instagram"></a>
-        <a href="#" target="_blank"><img src="Images/Social Media/tiktok-logo.jpg" alt="TikTok"></a>
-        <a href="#" target="_blank"><img src="Images/Social Media/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="LinkedIn"></a>
-    </footer>
+  </main>
+  <footer id="contact">
+    <div>
+      <h1>Get In Touch</h1>
+      <a href="#top">Back to top</a>
+      <p>
+        Let's build something together: email me at
+        <a href="mailto:ash.mariehe@gmail.com">ash.mariehe@gmail.com</a>, or
+        call: <a href="tel:#">(719) 229-3230</a>
+      </p>
+    </div>
+  </footer>
+  <footer>
+    <a href="#" target="_blank"
+      ><img src="Images/Social-Media/INSTAGRAM.png" alt="instagram"
+    /></a>
+    <a href="#" target="_blank"
+      ><img src="Images/Social-Media/tiktok-logo.jpg" alt="TikTok"
+    /></a>
+    <a href="#" target="_blank"
+      ><img
+        src="Images/Social-Media/linkedin-logo-linkedin-icon-transparent-free-png.webp"
+        alt="LinkedIn"
+    /></a>
+  </footer>
 </body>
 </html>
+
+
+
